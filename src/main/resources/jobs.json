@@ -1,0 +1,153 @@
+[
+  {
+    "name": "squire",
+    "pre-requisite": []
+  },
+  {
+    "name": "chemist",
+    "pre-requisite": []
+  },
+  {
+    "name": "knight",
+    "pre-requisite": [
+      {"type": "job", "name":"squire", "level":2}
+    ]
+  },
+  {
+    "name": "archer",
+    "pre-requisite": [
+      {"type": "job", "name":"squire", "level":2}
+    ]
+  },
+  {
+    "name": "white-mage",
+    "pre-requisite": [
+      {"type": "job", "name":"chemist", "level":2}
+    ]
+  },
+  {
+    "name": "black-mage",
+    "pre-requisite": [
+      {"type": "job", "name":"chemist", "level":2}
+    ]
+  },
+  {
+    "name": "monk",
+    "pre-requisite": [
+      {"type": "job", "name":"knight", "level":3}
+    ]
+  },
+  {
+    "name": "thief",
+    "pre-requisite": [
+      {"type": "job", "name":"archer", "level":3}
+    ]
+  },
+  {
+    "name": "mystic",
+    "pre-requisite": [
+      {"type": "job", "name":"white-mage", "level":3}
+    ]
+  },
+  {
+    "name": "time-mage",
+    "pre-requisite": [
+      {"type": "job", "name":"black-mage", "level":3}
+    ]
+  },
+  {
+    "name": "geomancer",
+    "pre-requisite": [
+      {"type": "job", "name": "monk", "level": 4}
+    ]
+  },
+  {
+    "name": "dragoon",
+    "pre-requisite": [
+      {"type": "job", "name":"thief", "level":4}
+    ]
+  },
+  {
+    "name": "orator",
+    "pre-requisite": [
+      {"type": "job", "name":"mystic", "level":3}
+    ]
+  },
+  {
+    "name": "summoner",
+    "pre-requisite": [
+      {"type": "job", "name":"time-mage", "level":3}
+    ]
+  },
+  {
+    "name": "samurai",
+    "pre-requisite": [
+      {"type": "job", "name":"knight", "level":4},
+      {"type": "job", "name":"monk", "level":5},
+      {"type": "job", "name":"dragoon", "level":2}
+    ]
+  },
+  {
+    "name": "ninja",
+    "pre-requisite": [
+      {"type": "job", "name":"archer", "level":4},
+      {"type": "job", "name":"thief", "level":5},
+      {"type": "job", "name":"geomancer", "level":2}
+    ]
+  },
+  {
+    "name": "arithmetician",
+    "pre-requisite": [
+      {"type": "job", "name":"white-mage", "level":5},
+      {"type": "job", "name":"black-mage", "level":5},
+      {"type": "job", "name":"time-mage", "level":4},
+      {"type": "job", "name":"mystic", "level":4}
+    ]
+  },
+  {
+    "name": "dancer",
+    "pre-requisite": [
+      {"type": "job", "name":"geomancer", "level":5},
+      {"type": "job", "name":"dragoon", "level":5},
+      {"type": "gender", "name":"female"}
+    ]
+  },
+  {
+    "name": "bard",
+    "pre-requisite": [
+      {"type": "job", "name":"summoner", "level":5},
+      {"type": "job", "name":"orator", "level":5},
+      {"type": "gender", "name":"male"}
+    ]
+  },
+  {
+    "name": "mime",
+    "pre-requisite": [
+      {"type": "job", "name":"squire", "level":8},
+      {"type": "job", "name":"chemist", "level":8},
+      {"type": "job", "name":"geomancer", "level":5},
+      {"type": "job", "name":"dragoon", "level":5},
+      {"type": "job", "name":"orator", "level":5},
+      {"type": "job", "name":"summoner", "level":5}
+    ]
+  },
+  {
+    "name": "dark-knight",
+    "pre-requisite": [
+      {"type": "kills", "level":20},
+      {"type": "job", "name":"knight", "level":10},
+      {"type": "job", "name":"black-mage", "level":10},
+      {"type": "job", "name":"dragoon", "level":8},
+      {"type": "job", "name":"samurai", "level":8},
+      {"type": "job", "name":"ninja", "level":8},
+      {"type": "job", "name":"geomancer", "level":8}
+    ]
+  },
+  {
+    "name": "onion-knight",
+    "pre-requisite": [
+      {"type": "job", "name":"squire", "level":6},
+      {"type": "job", "name":"chemist", "level":6}
+    ]
+  }
+]
